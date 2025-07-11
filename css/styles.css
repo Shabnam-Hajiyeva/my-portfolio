@@ -50,9 +50,9 @@ body {
     background-color: rgb(244, 228, 228);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 30px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 5px;
 }
 
 h2{
@@ -67,6 +67,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 2px;
+    margin: 20px;
     
 
 }
@@ -102,7 +103,6 @@ footer {
   } 
 }
 
-/* ----------------------------- */
 .hidden {
   display: none;
 }
@@ -121,6 +121,28 @@ footer {
 }
 
 .toggle-btn:hover {
-  background-color: #0056b3;
+  background-color: #090909;
 }
-  
+  #message{
+    height: 50px;
+  }
+
+  button:hover{
+    background-color:#090909;
+  }
+button{
+  background-color: #007BFF;
+  color:white;
+}
+
+.error{
+  color:red;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 0.9em;
+}
+
+.success{
+color:green;
+margin-top: 10px;
+}

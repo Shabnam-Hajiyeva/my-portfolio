@@ -54,9 +54,25 @@
 
 <div class="card contact">
     <h2>Contact me</h2>
-    <p>This will be a contact form in the future:</p>
+
+    <form id="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required> <br><br>
+    <div id="name-error" class="error"></div>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required> <br><br>
+    <div id="email-error" class="error"></div>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Type your message...."></textarea> <br><br>
+    <div id="message-error" class="error"></div>
+
+    <button type="submit">Send</button>
+    <p id="success-message" class="success"></p>
+   </form>
 </div>
-</section>
+
 
 <footer>
     <p>&copy; 2025 Shabnam Hajiyeva.  All rights reserved.</p>
