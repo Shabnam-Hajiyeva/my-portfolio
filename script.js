@@ -63,5 +63,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    const locationDiv=document.getElementById("location");
+    if("geolocation" in navigator){
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const {latitude, longitude}=position.coords;
+                locationDiv.textContent=`Your location: Lat ${latitude.toFixed(2)}, Lon ${longitude.toFixed(2)}`;
+
+            },
+            (error) => {
+                locationDiv.textContent="Location access unavailable";
+            }
+        );
+
+
+    }else{
+        locationDiv.textContent="Gelocation is not supported by your browser";
+    }
+
 });
 
